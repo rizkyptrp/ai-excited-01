@@ -5,6 +5,8 @@
 // sweeping across the sky and dissolving into a spiral galaxy, a ringed
 // planet glowing in the corner, and one line for the judge.
 // Node standard library only. Same seed, same bytes, every run.
+// Re-implemented fresh 2026-11-17 (rescue build): same algorithm, same
+// seed, same output — rewritten line by line in a new session.
 
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
