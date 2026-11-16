@@ -125,9 +125,9 @@ const SUNSET: RGB = [255, 154, 60];
 const SEA_TOP: RGB = [16, 62, 96];
 const SEA_BOT: RGB = [5, 26, 48];
 
-const SUN_X = 292;
-const SUN_Y = 612;
-const SUN_R = 96;
+const SUN_X = 232;
+const SUN_Y = 578;
+const SUN_R = 142;
 
 for (let y = 0; y < H; y++) {
   for (let x = 0; x < W; x++) {
@@ -232,16 +232,19 @@ function spineRadius(t: number): number {
   return Math.max(24, 172 * bump);
 }
 
-// Tail flukes (drawn first so the body overlaps their base).
-ellipseRot(262, 838, 112, 38, -42, BODY_DARK, 1);
-ellipseRot(340, 864, 102, 33, 22, BODY_DARK, 1);
+// Tail flukes (drawn first so the body overlaps their base) — big, lifted
+// and rim-lit so they read clearly against the dark sea instead of vanishing.
+ellipseRot(238, 792, 138, 46, -42, BODY_DARK, 1);
+ellipseRot(362, 822, 128, 42, 22, BODY_DARK, 1);
+ellipseRot(232, 786, 138, 40, -42, RIM, 0.55);
+ellipseRot(368, 816, 128, 36, 22, RIM, 0.45);
 
 // Warm rim-light silhouette, offset toward the sun (down-left of the spine).
 const N = 260;
 for (let i = 0; i <= N; i++) {
   const t = i / N;
   const [x, y] = spinePoint(t);
-  circle(x - 11, y + 13, spineRadius(t) + 1, RIM, 0.9);
+  circle(x - 17, y + 19, spineRadius(t) + 5, RIM, 1);
 }
 // Main body.
 for (let i = 0; i <= N; i++) {
