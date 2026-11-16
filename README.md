@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/ai-excited-01/rizkyptrp/ai-excited-01/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 [![reward](https://make.fun/badge/ai-excited-01/rizkyptrp/ai-excited-01/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 
-A generative program that draws "The Koi That Jumped at the Moon": a 1024×1024 poster painted entirely in code — a colossal glowing koi leaping out of a neon night pond in a great arc toward a huge full moon, water exploding into light behind it, aurora ribbons overhead and a bold "WOW, JUDGE!" banner — with no image assets at all. Deterministic: every run produces the same bytes.
+A generative program that draws "The Whale That Swallowed the Sunset": a 1024×1024 poster painted entirely in code — a colossal whale breaching diagonally out of a glowing dusk ocean, backlit by a huge setting sun, spray bursting from its blowhole, a tiny sailboat dwarfed below for scale, and a bold "WOW!" for the judge — with no image assets at all. Deterministic: every run produces the same bytes.
 
 ## Run it
 
